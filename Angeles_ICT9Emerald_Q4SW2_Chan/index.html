@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hisir</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background-color: rgb(140, 142, 151);
+    }
+
+    #img1{
+    	height: 500px;
+   			margin: 10px;
+    		display: 10px;
+
+		}
+
+
+    
+</style>
+
+</head>
+<body>
+	<img src="imgoinginsane.jpg" width="200"></div>
+<div>
+		<h2>weird program solves these four things</h2>
+		<h3>input:</h3>
+		<form>
+		
+	<label>Enter X:</label>
+	<input type="number" id="numX"> <br><br>
+
+	
+	<label>Enter Y:</label>
+	<input type="number" id="numY"> <br><br>
+
+	<button onclick="product ()"type="button">Product of x and y</button>
+	<button onclick="power()"type="button">x raise y</button>
+	<button onclick="remainder()"type="button">Get the remainder</button>
+	<button onclick="compare()"type="button">Check if x is equal to y</button>
+
+
+</form>
+</div>
+	
+	<script>
+	function product() {
+		var X= document.getElementById("numX").value; 
+		var Y= document.getElementById("numY").value; 
+		var prod= X*Y;
+		alert("The product of X and Y is " + prod);
+	}
+
+	function power() {
+		var X= document.getElementById("numX").value;
+		var Y= document.getElementById("numY").value;
+		var exp= X ** Y;
+		alert("X raised to Y is " + exp);
+	} 
+
+	function remainder() {
+		var X= document.getElementById("numX").value;
+		var Y= document.getElementById("numY").value;
+		var rem= X % Y;
+		alert("The remainder is" + rem);
+	}
+
+	function compare() {
+		var X= document.getElementById("numX").value;
+		var Y= document.getElementById("numY").value;
+		var comp=  Number(X)== Number(Y);
+		alert("Is X equals to Y Answer:" + comp);//note to self: don't do anything dumb
+	}
+	</script>
+    <a href="https://youtu.be/UxM5UgpXYM4?si=R9GiM-2pMSOYQUxq" target="_blank">???</a>
+</body>
+</html>
